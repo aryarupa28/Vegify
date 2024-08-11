@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Recipe Generator</title>
+</head>
+<body>
+    <h2>Input Ingredients and Quantity</h2>
+    <form method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">Generate Recipe</button>
+    </form>
+</body>
+</html>
